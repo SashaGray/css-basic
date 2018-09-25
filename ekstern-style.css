@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p {
+	color: gray;
+}
+body {
+	background-color: #B9CFFC;
+	background-image: url("cat.jpg");
+	background-repeat: no-repeat;
+}
