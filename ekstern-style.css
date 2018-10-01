@@ -2,10 +2,101 @@
 /* CSS Document */
 
 p {
-	color: gray;
+	font-family: helvetica, arial, sans-serif;
+	text-align: justify;
+	line-height: 150%;
+	width: 500px;
+	color: white;
 }
 body {
 	background-color: #B9CFFC;
-	background-image: url("cat.jpg");
+	background-image: url("images/cat.jpg");
 	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+h1 {
+	font-family: "georgia", "times new roman", serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 50px;
+	/* text-decoration: underline; */ 
+}
+
+a {
+	color: #BE8888;
+	text-decoration: none;
+	clear: both;
+	display: block; /* her ænder jeg hvordan a bliver vist - før var det et "inline-element", nu er det et "block-element"*/
+}
+
+a:link {
+	color: blue;
+}
+a:visited {
+	color: #0D0D8A;
+}
+
+a:hover {
+	color: orange;
+	font-wegiht: bold;
+	font-family: "georgia", serif;
+	letter-spacing: 5px;
+}
+
+a:active {
+	color: aqua;
+}
+
+#overskrift-1 {
+	color: red;
+}
+
+.fire-ben {
+	color: green;
+}
+
+.to-ben {
+	color: brown;
+}
+
+span {
+	font-weight: bold;
+}
+
+span.highlight {
+	background-color: yellow;
+}
+
+#kasse1 {
+	background-color: #ddd;
+	width: 50%;
+	margin: 50px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #333;
+	float: left;
+}
+
+#kasse2{
+	background: #eee;
+	width: 300px;
+	padding: 50px;
+	border: 2px dashed #333; /* shortcode til de 3 border værdier */
+	height: 500px;
+	float: right;
+}
+
+.tekst {
+	position: absolute;
+	top: 20px;
+	right: 31px;
+	width: 100px;
+	border: 1px solid white;
+}
+
+.tekst2 {
+	position: relative;
+	top: 100px;
+	left: 100px;
 }

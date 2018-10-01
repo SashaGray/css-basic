@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tips og tricks med morten</title>
+	
+<style>
+	body {
+		font-family: sans-serif; 
+	}
+	div {
+		width: 300px; /* selvom man har sat bredde og højde så fylder div stadig så andet ikke kommer op ved siden af den fordi det er et block element */
+		height: 100px; 
+	}
+	#my-shadow {
+		background-color: #CD1919; 
+		box-shadow: 5px 7px 15px #666; /* rækkefølge: venstre, top, udtoner skyggen på et større område - den skubber skyggen ud fra venstre hjørne og dernæst toppen ish */
+	}
+	#my-gradient {
+		background: linear-gradient(#6868E4, #43438D); /* farver der bliver "blended sammen"*/
+	}
+	#my-rotation {
+		background: #3EA03E; 
+		transform: rotate(-15deg); /*rotere elementer - med minus bliver det den ene vej og med positive tal bliver det den anden vej */
+	}
+	#my-transition {
+		background: #F0DB31; 
+		transition: width 2s; /* gør at bredden ændrer sig når musen hover over til de 600px angivet i hover nedenunder, men den æøger bredden langsomt */
+		transition-timing-funtion: ease-in; /* gør at den starter hurtigt med at øge bredden og bliver langsommere */
+	}
+	#my-transition:hover {
+		width: 600px; 
+		
+	}
+	h1 {
+		text-shadow: 2px 2px 5px #666; 
+	}
+	.spalter {
+	column-count: 3;
+	} 
+</style>
+	
+</head>
+
+<body>
+	<h2>Skygge</h2>
+	<div id="my-shadow"></div>
+	<h2>Farveforløb (gradient)</h2> 
+	<div id="my-gradient"></div>
+	<h2>Rotation</h2>
+	<div id="my-rotation"></div>
+	<h2>Animation/transition</h2>
+	<div id="my-transition"></div>
+	<h1>Skygge på tekst</h1> <!-- normalt ville man aldrig style på dne direkte i virkeligheden men det gør vi lige nu -->
+	<h2> tekst i spalter</h2>
+	<p lorem="spalter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius dignissimos incidunt facilis natus quasi ipsa sapiente, voluptatum reiciendis. Ea saepe provident hic. Necessitatibus, error reprehenderit, neque laudantium asperiores quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi deserunt repellat, rem recusandae, illum commodi maiores, assumenda ad quo labore odit voluptatibus. Vitae odit suscipit voluptate numquam harum aliquam quaerat.</p>
+</body>
+</html>

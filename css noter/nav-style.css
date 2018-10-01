@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS reset - skal se ens ud i alle browsere */ 
+* {
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+}
+
+/* Classic style */
+#navigation {
+	border-bottom: 1px solid #666; /* har lagt en farvet border i bunden af elementet */
+	
+	padding: 0px; /* gør at den streg der er under kommer op og flugter med border på menu-punkterne(linksne) */
+	
+	margin-top: 40px; /* gør at menu-linjen (linksne) kommer længere ned på siden så man kan se toppen */
+	
+	margin-bottom: 100px; /* skubber det der er under dne længere ned */
+	
+	float: right; /* gør at menulinjen kommer hen til højre side af skærmen */
+}
+
+/* det er kun li der er inde i navigation id'en der bliver påvirket - ikke andre lister der skulle komme på siden */
+#navigation li {
+	list-style: none; /* fjerner prikker osv. der automatisk kommer når man laver en liste */
+	
+	display: inline; /* normalt er lister et blok element men nu er de inline elementer */
+}
+
+/* det er kun de links der er inde under navigation id'et der bliver påvirket og stylet på her */
+#navigation a {
+	margin: 0px 15px 0px 15px; /* laver afstand mellem de forskellige punkter */
+	
+	font-family: arial, sans-serif; 
+	
+	text-decoration: none; /* fjerner understregning på links */
+	
+	color: #444; /* ændrer skrift farven fra den blå et link normalt har til den givne farve */
+	
+	border: 1px solid #666; /* border mellem alle menu-punkterne */
+	
+	padding: 5px 20px; /* rækkefølge - top, højre, bund, venstre - hvis bund+top er det samme og højre+venstre er den samme skriver man bare to tal. Denne gør at der kommer mere afstand mellem ordnene/content og vores bokse */ 
+	
+	background-color: #ddd; /* giver "boksnene/kasserne" en farve */
+	
+	border-radius: 7px 7px 0 0; /* skaber runde hjørner på "kasserne/boksene" med et tal bliver det alle 4 hjørne. Starter med øverste venstre hjørne til øverste højre hjørne, nederste højre, øverste højre kan også skriver */
+	
+	display: inline-block; /* hvis ikke det er inline-block kan man ikke rette på width når det bare er et inline-element. Så nu bliver det et inline-block element og så kan man godt ændre width */
+	
+	width: 100px; /* bredde på kasserne */
+	
+	border-bottom: hidden; /* skjuler den nederste border på linksnes kasser */
+	
+	text-align: center; /* centrere teksten til at stå på midten af kassen */
+}
+
+/* når musen er over bliver de elementer man skriver aktive */
+#navigation a:hover {
+	background: #EBEBEB; /* gør at når musen er over, så ændre farven på kassen sig til en anden farve */
+}
+
+/* påvirker kun det første "a"(link), der kommer inde i navigations id'et*/
+#navigation a:first-of-type {
+	margin-left: 0; 
+} 
+
+
+/* Flexbox-style */
+
+nav {
+	display: flex; /* gør det til en flex-box container - kan gøre med dem som man vil ish*/
+	height: 60px; 
+	align-items: center; /* sætter teksten ind i midten af de 60px som height er blevet defineret som */
+	width: 100%; 
+}
+
+/* Påvirker linksene under nav tagget */
+nav a {
+	width: 25%; 
+	background-color: #ddd; 
+	text-align: center; 
+	text-decoration: none; /* fjerner understregning som kommer automatisk ved links */
+	color: #444; /*ændrer den blå farve som links er normalt */
+	padding: 20px; /*nu hvor background color er sat på linksene så skal der padding så farven fylder mere */
+	font-family: Helvatica, sans-serif;
+}
+
+nav a:hover {
+	background-color: lightgoldenrodyellow; 
+}
+
+
+
+

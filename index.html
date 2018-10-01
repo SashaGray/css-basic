@@ -1,23 +1,50 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Styling med CSS</title>
-	
-	<!-- reference stylesheet -->
+	<head>
+	<meta charset="UTF-8">
+	<title>Styling med CSS</title>
+
+	<!-- reference til ekstern stylesheet -->
 	<link rel="stylesheet" href="ekstern-style.css">
-	
+
+	<!-- referende til ekstern stylsheet (Google Fonts) -->
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+
 	<!-- internt stylesheet -->
 	<style>
-		h1 {color: green;}
-	</style>
-	
-</head>
+h1 {
+	color: green;
+}
+</style>
+	</head>
 
-<body>
-	<!-- inline style -->
-	<h1 style="color: red">En overskrift</h1>
-	<h1>En til overskrift</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas atque, consequatur quisquam vitae nam! Natus est numquam deserunt quaerat assumenda unde veniam, tenetur, culpa quo beatae, nulla nemo molestiae quasi.</p>
+	<body>
+<!-- inline style -->
+<h1 id="overskrift-1">En overskrift</h1>
+<h1>En til overskrift</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas atque, consequatur quisquam vitae nam! Natus est numquam deserunt quaerat assumenda unde veniam, tenetur, <span class="highlight">culpa quo beatae</span>, nulla nemo molestiae quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis delectus a, aspernatur vitae aliquam sed at ullam aliquid distinctio placeat accusamus, officia modi natus beatae consectetur voluptatum hic esse facilis!</p>
+		
+<a href="pages/side-2.html">Dette er et link</a>
+		
+<div id="kasse1">
+   <ul>
+    <li class="fire-ben">Hund</li>
+    <li class="fire-ben">Kat</li>
+    <li class="to-ben">Høne</li>
+    <li class="fire-ben">Hest</li>
+    <li class="to-ben">Struds</li>
+  </ul>
+</div>
+<div id="kasse2">
+   <ul>
+    <li class="fire-ben">Hund</li>
+    <li class="fire-ben">Kat</li>
+    <li class="to-ben">Høne</li>
+    <li class="fire-ben">Hest</li>
+    <li class="to-ben">Struds</li>
+  </ul>
+</div>
+		<p class="tekst">Jeg er en tekst, der er placeret med en position-property.</p>
+		<p class="tekst2">Jeg er en tekst, der er placeret med "relativ" positionering.</p>
 </body>
 </html>
